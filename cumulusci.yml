@@ -1,0 +1,25 @@
+minimum_cumulusci_version: '3.57.0'
+project:
+    name: sfdx-poc-public
+    package:
+        name: sfdx-poc-public
+        api_version: '54.0'
+    git:
+        default_branch: 'main'
+    source_format: sfdx
+
+tasks:
+    robot:
+        options:
+            suites: robot/sfdx-poc-public/tests
+            options:
+                outputdir: robot/sfdx-poc-public/results
+
+    robot_testdoc:
+        options:
+            path: robot/sfdx-poc-public/tests
+            output: robot/sfdx-poc-public/doc/sfdx-poc-public_tests.html
+
+    run_tests:
+        options:
+            required_org_code_coverage_percent: 75
