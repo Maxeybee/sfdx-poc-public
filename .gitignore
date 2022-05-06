@@ -1,8 +1,6 @@
 # Salesforce / SFDX / CCI
 .cci
 .sfdx
-/src.orig
-/src
 
 # Python
 *.pyc
